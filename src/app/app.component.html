@@ -1,0 +1,47 @@
+<div class="main-container">
+  <div class="header">
+    HEADER
+  </div>
+  <div class="content">
+    <div class="content-container">
+
+      <vertical-split-pane>
+
+        <div class="split-pane-content-primary">
+          <div class="main-content">
+            <div class="main-content-header">
+              MAIN CONTENT HEADER
+            </div>
+            <div class="main-content-container">
+              <div *ngFor="let item of mainContentItems" class="main-content-item">
+                <div class="main-content-item-title">{{item.id}}</div>
+                <div class="main-content-item-end">X</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split-pane-content-secondary">
+          <div class="second-content">
+            <div class="second-content-header">
+              SECOND CONTENT HEADER
+            </div>
+            <div class="second-content-body">
+              <textarea></textarea>
+            </div>
+          </div>
+        </div>
+
+
+      </vertical-split-pane>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-container">
+      <div *ngFor="let item of footerItems" class="footer-item">
+        {{item.id}}
+      </div>
+
+    </div>
+  </div>
+</div>
