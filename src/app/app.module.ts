@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { SplitPaneModule } from 'ng2-split-pane/lib/ng2-split-pane';
+import { SplitPaneModule } from 'ng2-split-pane/src/ng2-split-pane';
 
 @NgModule({
   declarations: [
